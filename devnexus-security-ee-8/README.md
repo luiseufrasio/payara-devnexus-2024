@@ -26,17 +26,12 @@ To run the application locally, follow these steps:
 4. Once the runtime starts, you can access the project at http://localhost:8080/devnexus-security-ee-8
 
 
+### Adding a User for Form-Based Authentication with File Realm
+If you are using form-based authentication with file realm, you can create a user with the following command:
 
-### Existing Users for Form-Based Authentication with Database 
-The application currently has two existing users with the following credentials:
+```
+asadmin create-file-user --groups=user --target=server-config --authrealmname=file myuser
+```
+This command creates a user with the username `myuser` and assigns them to the `user` group. You can adjust the username and group as needed for your authentication setup.
 
-- **User**: myuser
-  - **Password**: secret
-  - **Roles**: user
-
-- **Admin**: myadmin
-  - **Password**: secret
-  - **Roles**: admin, user
-
-Use these credentials to log in and test the application.
 
