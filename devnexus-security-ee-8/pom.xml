@@ -11,7 +11,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <jakartaee-api.version>8.0.0</jakartaee-api.version>
         <payara.version>5.2022.5</payara.version>
         <cargo.version>1.10.7</cargo.version>
